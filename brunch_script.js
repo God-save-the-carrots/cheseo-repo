@@ -1,4 +1,4 @@
-window.onload = function (){
+window.onload = function () {
   $(document).ready(function () {
     //slide1
     var left_bt = $("#left_bt");
@@ -7,13 +7,13 @@ window.onload = function (){
     var move = -960;
     var num = document.getElementsByClassName('num');
 
-    $("#left_bt").css("display","none");
+    $("#left_bt").css("display", "none");
 
     $(left_bt).click(function () {
       if (count > 0) {
         count--;
         slidemove();
-      }else if (count < 0) {
+      } else if (count < 0) {
         count = 0;
       }
     });
@@ -22,88 +22,88 @@ window.onload = function (){
       if (count < 8) {
         count++;
         slidemove();
-      }else if (count > 8) {
+      } else if (count > 8) {
         count = 8;
       }
     });
 
-    $(num[0]).css({'color':"black"});
-    $(num[0]).css({'border-bottom':"3px solid black"});
+    $(num[0]).css({ 'color': "black" });
+    $(num[0]).css({ 'border-bottom': "3px solid black" });
 
     function slidemove() {
       if (count == 0) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-        $("#left_bt").css("display","none");
-        $("#right_bt").css("display","block");
-      }else if (count == 1) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+        $("#left_bt").css("display", "none");
+        $("#right_bt").css("display", "block");
+      } else if (count == 1) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-        $("#left_bt").css("display","block");
-      }else if (count == 2) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+        $("#left_bt").css("display", "block");
+      } else if (count == 2) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-      }else if (count == 3) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+      } else if (count == 3) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-      }else if (count == 4) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+      } else if (count == 4) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-      }else if (count == 5) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+      } else if (count == 5) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-      }else if (count == 6) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+      } else if (count == 6) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-      }else if (count == 7) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+      } else if (count == 7) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-        $("#right_bt").css("display","block");
-      }else if (count == 8) {
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+        $("#right_bt").css("display", "block");
+      } else if (count == 8) {
         all_change();
-        $(".slideimgs").stop().animate({left: move*count});
-        $(num[count]).css({'color':"black"});
-        $(num[count]).css({'border-bottom':"3px solid black"});
-        $("#right_bt").css("display","none");
-        $("#left_bt").css("display","block");
+        $(".slideimgs").stop().animate({ left: move * count });
+        $(num[count]).css({ 'color': "black" });
+        $(num[count]).css({ 'border-bottom': "3px solid black" });
+        $("#right_bt").css("display", "none");
+        $("#left_bt").css("display", "block");
       }
     };
 
     function all_change() {
-      $(num[0]).css({'color':"#cccccc"});
-      $(num[0]).css({'border-bottom':"0px solid black"});
-      $(num[1]).css({'color':"#cccccc"});
-      $(num[1]).css({'border-bottom':"0px solid black"});
-      $(num[2]).css({'color':"#cccccc"});
-      $(num[2]).css({'border-bottom':"0px solid black"});
-      $(num[3]).css({'color':"#cccccc"});
-      $(num[3]).css({'border-bottom':"0px solid black"});
-      $(num[4]).css({'color':"#cccccc"});
-      $(num[4]).css({'border-bottom':"0px solid black"});
-      $(num[5]).css({'color':"#cccccc"});
-      $(num[5]).css({'border-bottom':"0px solid black"});
-      $(num[6]).css({'color':"#cccccc"});
-      $(num[6]).css({'border-bottom':"0px solid black"});
-      $(num[7]).css({'color':"#cccccc"});
-      $(num[7]).css({'border-bottom':"0px solid black"});
-      $(num[8]).css({'color':"#cccccc"});
-      $(num[8]).css({'border-bottom':"0px solid black"});
+      $(num[0]).css({ 'color': "#cccccc" });
+      $(num[0]).css({ 'border-bottom': "0px solid black" });
+      $(num[1]).css({ 'color': "#cccccc" });
+      $(num[1]).css({ 'border-bottom': "0px solid black" });
+      $(num[2]).css({ 'color': "#cccccc" });
+      $(num[2]).css({ 'border-bottom': "0px solid black" });
+      $(num[3]).css({ 'color': "#cccccc" });
+      $(num[3]).css({ 'border-bottom': "0px solid black" });
+      $(num[4]).css({ 'color': "#cccccc" });
+      $(num[4]).css({ 'border-bottom': "0px solid black" });
+      $(num[5]).css({ 'color': "#cccccc" });
+      $(num[5]).css({ 'border-bottom': "0px solid black" });
+      $(num[6]).css({ 'color': "#cccccc" });
+      $(num[6]).css({ 'border-bottom': "0px solid black" });
+      $(num[7]).css({ 'color': "#cccccc" });
+      $(num[7]).css({ 'border-bottom': "0px solid black" });
+      $(num[8]).css({ 'color': "#cccccc" });
+      $(num[8]).css({ 'border-bottom': "0px solid black" });
     }
 
     $(num[0]).click(function () {
@@ -152,9 +152,9 @@ window.onload = function (){
     $("#right_bt2").click(function () {
       if (count2 < 2) {
         count2++;
-        $(".container").stop().animate({left: move2*count2});
+        $(".container").stop().animate({ left: move2 * count2 });
         shownone();
-      }else if (count2 > 2) {
+      } else if (count2 > 2) {
         count2 = 2;
         shownone();
       }
@@ -162,9 +162,9 @@ window.onload = function (){
     $("#left_bt2").click(function () {
       if (count2 > 0) {
         count2--;
-        $(".container").stop().animate({left: move2*count2});
+        $(".container").stop().animate({ left: move2 * count2 });
         shownone();
-      }else if (count2 < 0) {
+      } else if (count2 < 0) {
         count2 = 0;
         shownone();
       }
@@ -173,9 +173,9 @@ window.onload = function (){
     function shownone() {
       if (count2 == 0) {
         $("#left_bt2").css("display", "none");
-      }else if (count2 == 2) {
+      } else if (count2 == 2) {
         $("#right_bt2").css("display", "none");
-      }else {
+      } else {
         $("#left_bt2").css("display", "block");
         $("#right_bt2").css("display", "block");
       }
@@ -184,7 +184,7 @@ window.onload = function (){
     //header
     $(window).on("scroll", function () {
       var scroll = $(document).scrollTop();
-      console.log(scroll);
+      // console.log(scroll);
       if (scroll < 400) {
         $("#header").css("position", "relative");
         $("#header").css("backgroundColor", "");
@@ -192,7 +192,7 @@ window.onload = function (){
         $(".fake_header").css("display", "none");
         // $("#header").slideUp(1000);
         // console.log("대기중이야");
-      }else {
+      } else {
         $("#header").css("position", "fixed");
         $(".fake_header").css("display", "block");
         $("#header").css("backgroundColor", "#FFFFFFE6");
@@ -205,36 +205,36 @@ window.onload = function (){
     //top
     $(window).on("scroll", function () {
       scroll = $(document).scrollTop();
-      console.log(scroll);
+      // console.log(scroll);
       if (scroll > 1600 && scroll < 3500) {
-        console.log("올라와");
-        $(".fixed_top").css({position: "fixed"});
-        $(".fixed_top").stop().animate({top: 510}, 500);
-      }else if (scroll < 1600) {
-        console.log("내려가");
-        $(".fixed_top").css({position: "fixed"});
-        $(".fixed_top").stop().animate({top: 600}, 500);
-      }else if (scroll >= 3556) {
-        console.log("멈춰!");
-        $(".fixed_top").css({position: 'absolute', bottom: '0'});
+        // console.log("올라와");
+        $(".fixed_top").css({ position: "fixed" });
+        $(".fixed_top").stop().animate({ top: 510 }, 500);
+      } else if (scroll < 1600) {
+        // console.log("내려가");
+        $(".fixed_top").css({ position: "fixed" });
+        $(".fixed_top").stop().animate({ top: 600 }, 500);
+      } else if (scroll >= 3556) {
+        // console.log("멈춰!");
+        $(".fixed_top").css({ position: 'absolute', bottom: '0' });
       }
     });
     // if (scroll < 1600) {
-      //   $(".fixed_top").animate({bottom: -40}, 1000);
-      // }else if (scroll > 1600 && scroll < 3568) {
-        //   console.log("올라와라");
-        //   $(".fixed_top").animate({top: 510}, 1000);
-        // }else if (scroll > 3568) {
-          //   $(".fixed_top").css("position", "absolute");
-          //   // $(".fixed_top").css({top: 510});
-          // }
-          // fixedTop();
-          // setInterval(fixedTop, 100);
+    //   $(".fixed_top").animate({bottom: -40}, 1000);
+    // }else if (scroll > 1600 && scroll < 3568) {
+    //   console.log("올라와라");
+    //   $(".fixed_top").animate({top: 510}, 1000);
+    // }else if (scroll > 3568) {
+    //   $(".fixed_top").css("position", "absolute");
+    //   // $(".fixed_top").css({top: 510});
+    // }
+    // fixedTop();
+    // setInterval(fixedTop, 100);
 
     $(".fixed_top").click(function () {
-      // console.log("위로 간드아");
+      // console.log("위로");
       var position = $("#body_wrap").offset();
-      $("html, body").stop().animate({scrollTop: position.top}, 0);
+      $("html, body").stop().animate({ scrollTop: position.top }, 0);
     });
 
   });
